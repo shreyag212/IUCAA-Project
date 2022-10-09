@@ -5,13 +5,13 @@
     <li>generate() generates waveforms using a mass input and a dataframe with ri’s and Qi’s.
         R_pars.ipynb:
     <li>Generate randomized set of ri and Qi
-    <li>Output: **Params.csv** (59 sets of ri (pc) and Qi (log10))
+    <li>Output: __Params.csv__ (59 sets of ri (pc) and Qi (log10))
     </ul>
 <li>Gen.py
     <ul>
     <li>Generate waveforms 
     <li>Input: Params.csv, M = [1, 10, 25, 50] (solar masses)
-    <li>Output: **Samples.hdf5** (59 waveforms for 4 masses, 59*4=236)
+    <li>Output: <strong>Samples.hdf5</strong> (59 waveforms for 4 masses, 59*4=236)
     </ul>
 </ul>
 
