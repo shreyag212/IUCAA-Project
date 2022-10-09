@@ -48,7 +48,7 @@
 ## Trigger_Count
 <ul>
 <li>Functions: snrs.py: snr() calculates snr (or newsnr)
-<li>SNR_Calc: (SNR.py)
+<li>SNR.py
     <ul>
     <li>Calculate SNR (using plus and cross pol) for all 236 templates using ~3 hr LIGO Hanford and Livingston strain
     <li>Get Triggers from the SNRs (threshold=3.5, window=1)
@@ -61,27 +61,25 @@
     <li>Input: Trigger.hdf5
     <li>Output: <strong>Coinc_manual.hdf5</strong>
     </ul>
-<li>Pycbc_workflow 
+<li>Triggers_banks_files.ipynb:
     <ul>
-    <li>Triggers_banks_files.ipynb:
-        <ul>
-        <li>Generates Template bank and H1 and L1 trigger files
-        <li>Input: Trigger.hdf5
-        <li>Output: <strong>Tbank.hdf5 (template bank), Htrigs.hdf5 & Ltrigs.hdf5 (trigger files)</strong>
-        </ul>
-    <li>Run.sh  <strong>(Please save the required input files in the same directory as run.sh)</strong>
-        <ul>
-        <li>Uses pycbc_coinc_findtrigs.py to find coinc triggers
-        <li>Inputs: Tbank.hdf5, Htrigs.hdf5, and Ltrigs.hdf5
-        <li>Output: <strong>Coincs.hdf5</strong>
-        </ul>
-    <li>Read_Output.ipynb:
-        <ul>
-        <li>Convert the pycbc_coinc_findtrigs.py output into a different format
-        <li>Input: Coincs.hdf5
-        <li>Output: <strong>Coincs_wf.hdf5</strong>
-        </ul>
+    <li>Generates Template bank and H1 and L1 trigger files (for coinc_findtrigs)
+    <li>Input: Trigger.hdf5
+    <li>Output: <strong>Tbank.hdf5 (template bank), Htrigs.hdf5 & Ltrigs.hdf5 (trigger files)</strong>
     </ul>
+<li>Run.sh  <strong>(Please save the required input files in the same directory as run.sh)</strong>
+    <ul>
+    <li>Uses pycbc_coinc_findtrigs.py to find coinc triggers
+    <li>Inputs: Tbank.hdf5, Htrigs.hdf5, and Ltrigs.hdf5
+    <li>Output: <strong>Coincs.hdf5</strong>
+    </ul>
+<li>Read_Output.ipynb:
+    <ul>
+    <li>Convert the pycbc_coinc_findtrigs.py output into a different format
+    <li>Input: Coincs.hdf5
+    li>Output: <strong>Coincs_wf.hdf5</strong>
+    </ul>
+    
 <li>Trigger_analysis.ipynb
     <ul>
     <li>Plot outputs from Coincs_wf.hdf5
