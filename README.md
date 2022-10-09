@@ -53,7 +53,7 @@
     <li>Calculate SNR (using plus and cross pol) for all 236 templates using ~3 hr LIGO Hanford and Livingston strain
     <li>Get Triggers from the SNRs (threshold=3.5, window=1)
     <li>Input: Samples.hdf5, H.txt & L.txt (H1 and L1 ~3 hr strain file)
-    <li>Output: Trigger_Count/Triggers.hdf5
+    <li>Output: Triggers.hdf5
     </ul>
 <li>Find_Coincs_Manual.ipynb:
     <ul>
@@ -69,7 +69,7 @@
         <li>Input: Trigger.hdf5
         <li>Output: Tbank.hdf5 (template bank), Htrigs.hdf5 & Ltrigs.hdf5 (trigger files)
         </ul>
-    <li>Run.sh
+    <li>Run.sh  (Please save the required input files in the same directory as run.sh)
         <ul>
         <li>Uses pycbc_coinc_findtrigs.py to find coinc triggers
         <li>Inputs: Tbank.hdf5, Htrigs.hdf5, and Ltrigs.hdf5
@@ -79,7 +79,7 @@
         <ul>
         <li>Convert the pycbc_coinc_findtrigs.py output into a different format
         <li>Input: Coincs.hdf5
-        <li>Output: Coincs_wf.hdf5 (saved in Trigger_Count)
+        <li>Output: Coincs_wf.hdf5
         </ul>
     </ul>
 <li>Trigger_analysis.ipynb
