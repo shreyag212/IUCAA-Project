@@ -5,7 +5,7 @@
     <li>generate() generates waveforms using a mass input and a dataframe with ri’s and Qi’s.
         R_pars.ipynb:
     <li>Generate randomized set of ri and Qi
-    <li>Output: __Params.csv__ (59 sets of ri (pc) and Qi (log10))
+    <li>Output: <strong>Params.csv</strong> (59 sets of ri (pc) and Qi (log10))
     </ul>
 <li>Gen.py
     <ul>
@@ -33,7 +33,7 @@
     <ul>
     <li>Finds the horizon distance
     <li>Inputs: Samples.hdf5, H_200s.csv (200 seconds of Hanfors strain for snr())
-    <li>Output: **Horizon.csv**
+    <li>Output: <strong>Horizon.csv</strong>
     </ul>
 </ul>
 
@@ -53,13 +53,13 @@
     <li>Calculate SNR (using plus and cross pol) for all 236 templates using ~3 hr LIGO Hanford and Livingston strain
     <li>Get Triggers from the SNRs (threshold=3.5, window=1)
     <li>Input: Samples.hdf5, H.txt & L.txt (H1 and L1 ~3 hr strain file)
-    <li>Output: **Triggers.hdf5**
+    <li>Output: <strong>Triggers.hdf5</strong>
     </ul>
 <li>Find_Coincs_Manual.ipynb:
     <ul>
     <li>Finds H1 and L1 coincident triggers
     <li>Input: Trigger.hdf5
-    <li>Output: **Coinc_manual.hdf5**
+    <li>Output: <strong>Coinc_manual.hdf5</strong>
     </ul>
 <li>Pycbc_workflow 
     <ul>
@@ -67,19 +67,19 @@
         <ul>
         <li>Generates Template bank and H1 and L1 trigger files
         <li>Input: Trigger.hdf5
-        <li>Output: T**bank.hdf5 (template bank), Htrigs.hdf5 & Ltrigs.hdf5 (trigger files)**
+        <li>Output: <strong>Tbank.hdf5 (template bank), Htrigs.hdf5 & Ltrigs.hdf5 (trigger files)</strong>
         </ul>
-    <li>Run.sh  **(Please save the required input files in the same directory as run.sh)**
+    <li>Run.sh  <strong>(Please save the required input files in the same directory as run.sh)</strong>
         <ul>
         <li>Uses pycbc_coinc_findtrigs.py to find coinc triggers
         <li>Inputs: Tbank.hdf5, Htrigs.hdf5, and Ltrigs.hdf5
-        <li>Output: **Coincs.hdf5**
+        <li>Output: <strong>Coincs.hdf5</strong>
         </ul>
     <li>Read_Output.ipynb:
         <ul>
         <li>Convert the pycbc_coinc_findtrigs.py output into a different format
         <li>Input: Coincs.hdf5
-        <li>Output: **Coincs_wf.hdf5**
+        <li>Output: <strong>Coincs_wf.hdf5</strong>
         </ul>
     </ul>
 <li>Trigger_analysis.ipynb
