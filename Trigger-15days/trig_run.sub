@@ -1,0 +1,10 @@
+Universe = Vanilla
+executable              = run.sh
+log                     = run.log
+output                  = outfile.txt
+error                   = errors.txt
+should_transfer_files   = Yes
+when_to_transfer_output = ON_EXIT
+getenv                  = true
+accounting_group        = iucaa.shrey
+queue
