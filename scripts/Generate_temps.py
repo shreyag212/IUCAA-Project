@@ -10,7 +10,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 
-df_ = pd.read_csv('/Data/lins.csv') ## read params
+df_ = pd.read_csv('/Dataset/lins.csv') ## read params
 
 hd = h5py.File('linS.hdf5', 'w')
 hp = hd.create_group('Hp')
